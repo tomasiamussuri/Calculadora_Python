@@ -1,9 +1,9 @@
-# importar tkinter
+# Import tkinter / Importar tkinter
 from tkinter import *
 from tkinter import ttk
 
 
-# Cores
+# Colors / Cores
 color1 = "#000000" #black/preto
 color2 = "#FFFFFF" #white/branco
 color3 = "#2E2E2E" #grey dark/cinza escuro
@@ -12,14 +12,14 @@ color5 = "#FF8000" #orange/laranja
 color6 = "#5858FA" #blue/azul
 
 
-# Template
+# Template / Modelo
 window =Tk()
-window.title("Calculadora Python")
+window.title("calculator")
 window.geometry("235x310")
 window.config(bg=color1)
 
 
-# Criando Frames
+# Creating Frames / Criando Quadros
 frame_display = Frame(window, width=235, height=50, bg=color1)
 frame_display.grid(row=0, column=0)
 
@@ -27,12 +27,12 @@ frame_body = Frame(window, width=235, height=260, bg=color1)
 frame_body.grid(row=1, column=0)
 
 
-# Variaveis
+# Variables / Variaveis
 all_values = ''
 value_text = StringVar()
 
 
-# Criando Funções
+# Creating Functions / Criando Funções
 def entry_value(event):
     global all_values
 
@@ -46,19 +46,18 @@ def calculate():
     
     value_text.set(str(result))
 
-# Limpar tela
 def clear_display():
     global all_values
     all_values =''
     value_text.set("")
 
 
-# Criando Label
+# Creating Label / Criando Etiqueta
 app_label = Label(frame_display, textvariable=value_text, width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, font=('Ivy 18'), bg=color3, fg=color2)
 app_label.place(x=0, y=0)
 
 
-# Criando Botões
+# Creating Buttons / Criando Botões
 button_1 = Button(frame_body, command=clear_display, text="C", width=12, height=2, bg=color4, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 button_1.place(x=0, y=0)
 
@@ -114,6 +113,6 @@ button_18 = Button(frame_body, command = calculate, text="=", width=6, height=2,
 button_18.place(x=177, y=208)
 
 
-# Aplicação
+# Application / Aplicação
 window.mainloop()
 
