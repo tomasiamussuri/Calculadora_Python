@@ -1,7 +1,10 @@
-# Calculadora
+# Calculator <!-- Calculadora -->
 
 
-### Criando uma calculadora utilizando Python
+#### Objectives <!-- Objetivos -->
+Create a calculator using Python
+<!-- Criar uma calculadora utilizando Python -->
 
 
-### Foi utilizado tkinter para criação do layout
+#### Imports <!-- Importações -->
+Foi utilizado tkinter para criação do layout
